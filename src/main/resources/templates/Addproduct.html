@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css1/index.css">
+<title>Add Product</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+h1 {
+     color:red;
+     margin: 0 
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+p.solid{border-style:solid;}
+li a:hover {
+  background-color: #111;
+}
+.header {
+  background-color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.registerbtn {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 3;
+}
+</style>
+</head>
+<body bgcolor="palegreen">
+<ul>
+  <li><a class="active" href="Userome.html">Home</a></li>
+  <li><a href="Changepass.html">Change Password</a></li>
+  <li><a href="more.html">More info</a></li>
+  <li><a href="Home.html">Logout</a></li>
+</ul>
+<div class="header">
+<img src="images/logo.jpg" width="100px" height="100px">
+  <h3>KITCHEN STORY</h3>
+  <h5>Fresh - Food - Fast </h5>
+  <p class="solid"></p>
+</div>
+<div align="center" >
+<form action="login2.html">
+  <div class="container">
+    <h1><i> New Product Details</i></h1><br>
+    <fieldset  style="background-color:white;">
+    <hr>
+    <label for="pname"><b>Product Name</b></label>
+    <input type="text" placeholder="Product name" name="pname" id="pname" required><br>
+    
+    <label for="cat"><b>Category</b></label>
+    <input type="text" placeholder="Category" name="cat" id="cat" required><br>
+    
+    <label for="price"><b>Price</b></label>
+    <input type="text" placeholder="Enter Price" name="price" id="price" required><br>
+
+    <label for="qty"><b>Quantity</b></label>
+    <input type="text" placeholder="Quantity Stock" name="qty" id="qty" required><br>
+
+    <label for="photo"><b>Image</b></label>
+     <input type="file" id="inputImage" Name="photo" required><br>
+    <hr>
+    <button type="submit" class="registerbtn">Add</button>
+    </fieldset>
+  </div>
+</form>
+</div><br>
+</body>
+</html>

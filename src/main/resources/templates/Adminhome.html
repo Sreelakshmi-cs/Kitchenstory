@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css1/index.css">
+
+<title>Admin Login</title>
+<style>
+.header {
+  background-color: white;
+  text-align: center;
+  font-size: 25px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+p.solid{border-style:solid;}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 400px) {
+  .column {
+    width: 90%;
+  }
+}
+
+</style>
+</head>
+<body  bgcolor="lightgreen">
+   <ul>
+  	 <li><a class="active" href="Adminhome.html">Home</a></li>
+  	 <li><a href="manageitems.html">ManageProducts</a></li>
+ 	 <li><a href="Changepass.html">ChangePassword</a></li>
+ 	 <li><a href="login1.html">Logout</a></li>
+   </ul>
+<div class="header">
+<img src="images/logo.jpg" width="100px" height="100px">
+  <h3>KITCHEN STORY</h3>
+  <h5>Fresh - Food - Fast </h5>
+<p class="solid"></p>
+</div>
+	<div class="row" style="background-color:white;">
+		<h1  style="color:Tomato;" align="center"><i>Admin Operations</i></h1>
+         <div class="column"><img style="border: 2px solid black;" src="images/changepass.png" width="240px" height="220px"><p>Change Password</p></div>
+         <div class="column"><img style="border: 2px solid black;" src="images/update.png" width="240px" height="220px"><p>  Update Products</p></div>
+         <div class="column"><img style="border: 2px solid black;" src="images/contact.jpg" width="240px" height="220px"><p>  Update Contact</p></div>
+	</div>
+</body>
+</html>

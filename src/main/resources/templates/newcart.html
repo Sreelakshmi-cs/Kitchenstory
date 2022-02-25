@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css1/index.css">
+<title>Cart</title>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.header {
+  background-color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgreen;
+}
+p.solid{border-style:solid;}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="Userhome.html">Home</a></li>
+  <li><a href="Items.html">Items</a></li>
+  <li><a href="Home.html">Logout</a></li>
+</ul>
+
+<div class="header">
+<img src="images/logo.jpg" width="100px" height="100px">
+  <h3>KITCHEN STORY</h3>
+  <h5>Fresh - Food - Fast </h5>
+</div>
+<p class="solid"></p>
+<h1  style="color:Tomato;" align="center">My Cart</h1>
+
+<div style="color:darkgreen;">
+
+<table align="center" class="center" border="1">
+
+<tr>
+<th>Product Id</th>
+<th>Product name</th>
+<th>Quantity</th>
+<th>Price</th>
+<th>Action</th>
+</tr>
+<tr >
+	<td>P1</td>
+	<td>Spinach leaves</td>
+	<td>3</td>
+	<th>280</th>
+	<td><a href="delete.html">Remove</a></td>
+</tr>
+<tr >
+	<td>P4</td>
+	<td>Carrot Red</td>
+	<td>8</td>
+	<th>310</th>
+	<td><a href="delete.html">Remove</a></td>
+</tr>
+<tr >
+	<td>P6</td>
+	<td>Apple Green</td>
+	<td>6</td>
+	<th>400</th>
+	<td><a href="delete.html">Remove</a></td>
+</tr>
+<tr >
+	<td>P3</td>
+	<td>Watermelon</td>
+	<td>2</td>
+	<th>250</th>
+	<td><a href="delete.html">Remove</a></td>
+</tr>
+<tr>
+<td colspan="5"><a href="purchase.html"> Proceed </a></td>
+</tr>
+
+
+</table>
+
+</div>
+
+</body>
+</html>

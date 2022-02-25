@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css1/index.css">
+
+<title>Change Password</title>
+<style>
+.header {
+  background-color: white;
+  text-align: center;
+  font-size: 25px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+p.solid{border-style:solid;}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body  bgcolor="lightgreen">
+<ul>
+     <li><a href="Adminhome.html">Home</a></li>
+     <li><a href="manageitems.html">ManageItems</a></li>
+  <li><a href="#more">More info</a></li>
+  <li><a href="Home.html">Logout</a></li>
+</ul>
+<div class="header">
+<img src="images/logo.jpg" width="100px" height="100px">
+  <h3>KITCHEN STORY</h3>
+  <h5>Fresh - Food - Fast </h5>
+<p class="solid"></p>
+</div>
+<div style="color:Red;" align="center">
+<form action="Userhome.html"  th:action="@{/checkuser}" method="post">
+		<fieldset   style="background-color:white;">
+		<h2><b>Change Password</b></h2>
+		<h4><b>Admin</b></h4>
+		Enter Old Password: <input name="oldpass" type="password" /> <br/>
+		<br/>
+	    Enter New Password: <input name="newpass"  type="password"/> <br/>
+	    <br/>
+	    Confirm New Password: <input name="newpass2"  type="password"/> <br/>
+	    <br/>
+		<input type="button" class="button" value="LOGIN">
+		<br>
+		</fieldset>
+		
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+  background-color:  #61B136 ;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+.WebContainer{
+	width:100%;
+	height:auto;
+}
+.articles{
+	width:90%;
+	height:auto;
+	margin:auto;
+}
+h1, h2, h3 {
+     letter-spacing: 0;
+     font-weight: normal;
+     font-family: "Copperplate", "Papyrus", fantasy;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color:#A7AC38;
+     margin: 0 
+}
+h4, h5, h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     font-family: "Lucida Console", "Courier New", monospace;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color:#FFCB52;
+     margin: 0 
+}
+
+

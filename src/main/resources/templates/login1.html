@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css1/index.css">
+
+<title>Admin Login</title>
+<style>
+.header {
+  background-color: white;
+  text-align: center;
+  font-size: 25px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+p.solid{border-style:solid;}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body  bgcolor="lightgreen">
+<ul>
+     <li><a href="Home.html">Home</a></li>
+     <li><a href="#contact">Contact</a></li>
+     <li><a href="#more">More info</a></li>
+</ul>
+<div class="header">
+<img src="images/logo.jpg" width="100px" height="100px">
+  <h3>KITCHEN STORY</h3>
+  <h5>Fresh - Food - Fast </h5>
+<p class="solid"></p>
+</div>
+<div style="color:Red;" align="center">
+<form action="Adminhome.html"  th:action="@{/checkuser}" method="post">
+		<fieldset   style="background-color:white;">
+		<h2><b>Admin Login</b></h2>
+		<h4><b>Enter Your Credentials</b></h4>
+		AdminID: <input name="adminID" type="text" /> <br/>
+		<br/>
+	    Password: <input name="password"  type="password"/> <br/>
+	    <br/>
+		<input type="button" class="button" value="LOGIN">
+		<br>
+		</fieldset>
+</form>
+</div>
+</body>
+</html>

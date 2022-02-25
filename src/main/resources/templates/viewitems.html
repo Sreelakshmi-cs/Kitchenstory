@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css1/index.css">
+<title>Viewitems</title>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 22.22%;
+  padding: 2px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+.header {
+  background-color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgreen;
+}
+
+.image-box{
+ width: 15%;
+ text-align: center;
+}
+.about{
+ height: 100%;
+}
+
+p.solid{border-style:solid;}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body  bgcolor="lightgreen">
+<ul>
+  <li><a class="active" href="Userhome.html">Home</a></li>
+  <li><a href="viewitems.html">Items</a></li>
+  <li><a href="newcart.html">Cart</a></li>
+  <li><a href="Home.html">Logout</a></li>
+</ul>
+
+<div class="header">
+<img src="images/logo.jpg" width="100px" height="100px">
+  <h3>KITCHEN STORY</h3>
+  <h5>Fresh - Food - Fast </h5>
+  <p class="solid"></p>
+</div>
+<h1  style="color:red;" align="center"><i>Items in Stock</i></h1>
+<h2 style="color:blue" align="center">Dairy & Eggs ||  Meat & Fish || Fruits   ||  Vegetables  </h2>
+<br>
+
+<div class="row">
+  <div class="column">
+  <b>Spices - Rs : 70/kg</b>
+    <img src="images/spices.jpg"  width="225px" height="200px">
+    <br/>
+		<input type="button" class="button" value="Add">
+  </div>
+  <div class="column">
+  <b>Chilli - Rs : 35/kg</b>
+    <img src="images/chilli.jpg"   width="225px" height="200px">
+    <br/>
+		<input type="button" class="button" value="Add">
+  </div>
+  <div class="column">
+  <b>Tomato - Rs : 450/kg</b>
+    <img src="images/tomato.jpg" width="225px" height="200px">
+    <br/>
+		<input type="button" class="button" value="Add">
+  </div>
+  <div class="column">
+  <b>Garlic - Rs : 76/kg</b>
+    <img src="images/garlic.jpeg"  width="225px" height="200px">
+    <br/>
+		<input type="button" class="button" value="Add">
+  </div>
+  <div class="column">
+  <b>Meat - Rs : 860/kg</b>
+    <img src="images/meat.jpg" width="225px" height="200px">
+    <br/>
+		<input type="button" class="button" value="Add">
+  </div>
+   <div class="column">
+   <b>Eggs - Rs : 70/dozen</b>
+    <img src="images/eggs.jpg"   width="225px" height="200px">
+    <br/>
+		<input type="button" class="button" value="Add">
+ 	 </div>
+</div>
+
+<div class="row">
+  <div class="column">
+  <b>Pulses - Rs : 56/kg</b>
+    <img src="images/pulses.jpg"   width="225px" height="200px">
+    <br/>
+		<input type="button" class="button" value="Add">
+  </div>
+  <div class="column">
+   <b>Lettuce - Rs : 80/leaves</b>
+    <img src="images/lettuce.jpg"    width="225px" height="200px">
+    <br/>
+		<input type="button" class="button" value="Add">
+  </div>
+  <div class="column">
+   <b>Lemon - Rs : 44/kg</b>
+    <img src="images/lemon.jpg"  width="225px" height="200px">
+    <br/>
+		<input type="button" class="button" value="Add">
+  </div>
+  <div class="column">
+   <b>Dragon Fruit - Rs : 560/kg</b>
+    <img src="images/dragon.jpg"  width="225px" height="200px">
+    <br/>
+		<input type="button" class="button" value="Add">
+  </div>
+  <div class="column">
+   <b>Apple - Rs : 568/kg</b>
+    <img src="images/Apple.jpg"  width="225px" height="200px">
+    <br/>
+		<input type="button" class="button" value="Add">
+  </div>
+   <div class="column">
+    <b>Orange - Rs : 300/kg</b>
+    <img src="images/orange.jpg"   width="225px" height="200px">
+    <br/>
+		<input type="button" class="button" value="Add">
+ 	 </div>
+</div>
+</body>
+</html>

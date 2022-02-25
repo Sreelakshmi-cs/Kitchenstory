@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org" >
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css1/style.css">
+<title>KitchenStory</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+.header {
+  background-color: white;
+  padding: 2px;
+  text-align: center;
+  font-size: 30px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 400px) {
+  .column {
+    width: 90%;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="login2.html">SignIn</a></li>
+     <li><a href="Register.html">New Here? SignUp</a></li>
+   <li><a href="#contact">Contact</a></li>
+  <li><a href="#more">More info</a></li>
+</ul>
+<div class="header">
+<img src="images/logo.jpg" width="150px" height="150px" class="center">
+  <h3>KITCHEN STORY</h3>
+  <h6>Fresh - Food - Fast </h6>
+</div>
+      <marquee style="font-size:10pt;" width = "100%"><i>Get fresh Items at your doorstep !!! All you need to do is grab an Account and Start Shopping !!! Just Sit back and order</i>  </marquee>
+<div class="row">
+  <div class="column"><img style="border: 4px solid lightgreen;" src="images/fruit2.jpg" width="440px" height="280px"></div>
+  <div class="column"><img style="border: 4px solid lightgreen;" src="images/veg1.jpg" width="440px" height="280px"></div>
+  <div class="column"><img style="border: 4px solid lightgreen;" src="images/last.jpg" width="440px" height="280px"></div>
+</div>
+</body>
+</html>
